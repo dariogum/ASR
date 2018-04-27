@@ -1,0 +1,131 @@
+html {
+	background: #EAE7DC;
+	font-family: 'Quicksand', sans-serif;
+}
+.clearfix:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+.asrForm {
+	font-size: 1.75em;
+	line-height: 2em;
+	padding: 2.5em 0 0;
+}
+.column {
+	box-sizing: border-box;
+	float: left;
+	margin: 1em 0;
+	padding: 0 2em;
+	width: 50%;
+}
+.asrForm input, .asrForm select {
+	background: none;
+	border: none;
+	border-bottom: 2px dashed #E98074;
+	box-sizing: border-box;
+	color: #E85A4F;
+	max-width: 100%;
+	padding: 0 0 .1em;
+	text-align: center;
+}
+.grammar, .results {
+	border-bottom: 2px dashed #E98074;
+	color: #E85A4F;
+	font-size: .5em;
+	line-height: 1.5em;
+}
+.buttons {
+	text-align: center;
+}
+.asrForm button {
+	background: none;
+	border: none;
+	border-bottom: 2px solid #D8C3A5;
+	font-size: .5em;
+	font-weight: bold;
+	min-height: 44px;
+	min-width: 100px;
+	text-transform: uppercase;
+}
+.asrForm .feedback {
+	background: #EAE7DC;
+	border: none;
+	border-bottom: 2px solid #D8C3A5;
+	font-size: 0.5em;
+	line-height: 1em;
+	left: 0;
+	padding: 1em;
+	position: fixed;
+	right: 0;
+	text-align: center;
+	top: 0;
+}
+.asrForm .warning {
+	background: #D8C3A5;
+}
+.asrForm .error {
+	background: #E98074;
+}
+footer {
+	color: #E85A4F;
+	font-weight: bold;
+	margin: 3em 0 0;
+	text-align: center;
+}
+.styled-checkbox {
+	position: absolute;
+	opacity: 0;
+}
+.styled-checkbox + label {
+	position: relative;
+	cursor: pointer;
+	padding: 0;
+}
+.styled-checkbox + label:before {
+	content: '';
+	margin-right: 10px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: white;
+}
+.styled-checkbox:hover + label:before {
+	background: #E85A4F;
+}
+.styled-checkbox:focus + label:before {
+	box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+.styled-checkbox:checked + label:before {
+	background: #E85A4F;
+}
+.styled-checkbox:disabled + label {
+	color: #b8b8b8;
+	cursor: auto;
+}
+.styled-checkbox:disabled + label:before {
+	box-shadow: none;
+	background: #ddd;
+}
+.styled-checkbox:checked + label:after {
+	content: '';
+	position: absolute;
+	left: 5px;
+	top: 16px;
+	background: white;
+	width: 2px;
+	height: 2px;
+	box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+@media (max-width: 599px) {
+	.asrForm {
+		padding: 1em;
+		text-align: center;
+	}
+	.column {
+		padding: 0 1em;
+		width: 100%;
+	}
+}
